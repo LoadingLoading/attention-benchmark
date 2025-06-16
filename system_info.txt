@@ -28,6 +28,8 @@ Disk Information:
 
 GPUtil is not installed. Please install it with `pip install gputil` to get detailed GPU information.
 
+python version 3.11.11
+
 Python Packages:
 Package                            Version
 ---------------------------------- -------------------
