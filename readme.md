@@ -11,9 +11,7 @@ Our study systematically evaluates nine self-attention mechanisms within the GPT
 ## Key Contributions
 
 - **Comprehensive Benchmarking**: Empirical comparison of nine popular self-attention mechanisms.
-    
 - **Resource Efficiency Analysis**: Detailed measurement of GPU memory usage, training time, energy consumption, and computational complexity.
-    
 - **Practical Recommendations**: Insights on the most energy-efficient attention mechanisms suitable for deployment in resource-constrained environments.
     
 
