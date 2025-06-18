@@ -80,16 +80,15 @@ This benchmarking study underscores the importance of choosing attention mechani
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/Attention-Profiling.git
-cd Attention-Profiling
+git clone https://github.com/LoadingLoading/attention-benchmark
+cd attention-benchmark
 pip install -r requirements.txt
 ```
 
 ### Running Benchmark
 
 ```bash
-cd benchmarking
-python run_benchmark.py
+python main.py
 ```
 
 ## Contributions
