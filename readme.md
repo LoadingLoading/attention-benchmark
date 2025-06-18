@@ -75,13 +75,23 @@ FlashAttention demonstrated the lowest cumulative GPU energy consumption, balanc
 
 This benchmarking study underscores the importance of choosing attention mechanisms based on comprehensive efficiency metrics. Attention mechanisms such as FlashAttention, Linear Attention, and ScaledDotProductAttention emerge as leading choices for environmentally sustainable and resource-efficient AI.
 
+## Future Work
+
+Future work will focus on several important directions:
+
+- **Scalability Analysis**: Evaluate the attention mechanisms on larger-scale open models to understand their performance in more complex scenarios.
+- **Diverse Dataset Benchmarking**: Benchmark the attention mechanisms using more varied and multi-task datasets to assess their adaptability and performance across different workloads.
+- **Hardware Variation Analysis**: Extend benchmarking to different GPU architectures to investigate how attention mechanisms perform across varying hardware environments.
+
 ## Getting Started
 
 ### Installation
 
 ```bash
 git clone https://github.com/LoadingLoading/attention-benchmark
+
 cd attention-benchmark
+
 pip install -r requirements.txt
 ```
 
@@ -96,3 +106,5 @@ python main.py
 We invite researchers and developers to further explore these findings, extend benchmarking to additional attention mechanisms, and contribute to a greener AI future.
 
 Please open an issue or submit a pull request for any queries, suggestions, or contributions.
+
+
