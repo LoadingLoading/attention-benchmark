@@ -73,10 +73,24 @@ FlashAttention demonstrated the lowest cumulative GPU energy consumption, balanc
 
 ## Graphical Results
 - **Training Time per Epoch**
-- **GPU Power Usage per Epoch**
-- **Total GPU Energy Consumption**
+  ![Training Time per Epoch](https://github.com/Zhengyu-Tian/attention-benchmark/blob/main/assets/training_time_s.png)
+  Baseline and sliding-window attention are the two slowest to train—hovering around 260 s per epoch—while LSH, Linear Flex, and Scaled Dot Product finish roughly 20 % faster, making them the clear choices if wall-clock speed is the priority.
+  
+- **GPU Energy Consumption**
+  ![GPU Energy Consumption](https://github.com/Zhengyu-Tian/attention-benchmark/blob/main/assets/gpu_total_energy_sorted.png)
+  Energy-wise, Flash Attention is the most frugal at about 1.07 MJ, consuming roughly 25 % less GPU energy than the power-hungry Sliding-Window and Baseline methods, which top the chart at 1.43 MJ and 1.39 MJ respectively.
+  
+- **Total Memory Consumption**
+  ![Total Memory Consumptio](https://github.com/Zhengyu-Tian/attention-benchmark/blob/main/assets/gpu_memory_MB.png)
+On memory footprint, Flash Attention again leads with the smallest peak usage (~16.9 GB), while Multi-Head Flex and Sliding-Window push past 20 GB, signaling that Flash is the best fit for tight-VRAM settings.
+
 - **Training Loss Curves**
+  ![Training Loss Curves](https://github.com/Zhengyu-Tian/attention-benchmark/blob/main/assets/loss_loss.png)
+  Across twenty epochs, Multi-Head Latent Attention is the only variant whose loss keeps falling steadily past epoch 10, ending below 2, whereas every other mechanism flattens out near 3 and Sliding Window even drifts upward—highlighting Latent Attention’s superior convergence.
+  
 - **FLOPs and Memory Usage**
+  ![FLOPs and Memory Usage](https://github.com/Zhengyu-Tian/attention-benchmark/blob/main/assets/FLOPS_FLOPS.png)
+  Finally, in raw compute cost, Multi-Head Latent Attention registers the lowest FLOPs (~0.92 × 10¹²), whereas Linear Flex edges past 1.07 × 10¹², meaning Latent Attention delivers its strong learning curve with the lightest arithmetic burden of the group.
   
 ## Conclusion
 
