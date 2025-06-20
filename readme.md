@@ -71,6 +71,13 @@ FlashAttention, Linear Attention, and ScaledDotProductAttention showed superior 
 
 FlashAttention demonstrated the lowest cumulative GPU energy consumption, balancing training speed and GPU power draw effectively.
 
+## Graphical Results
+- **Training Time per Epoch**
+- **GPU Power Usage per Epoch**
+- **Total GPU Energy Consumption**
+- **Training Loss Curves**
+- **FLOPs and Memory Usage**
+  
 ## Conclusion
 
 This benchmarking study underscores the importance of choosing attention mechanisms based on comprehensive efficiency metrics. Attention mechanisms such as FlashAttention, Linear Attention, and ScaledDotProductAttention emerge as leading choices for environmentally sustainable and resource-efficient AI.
