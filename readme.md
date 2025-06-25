@@ -26,7 +26,6 @@ Given the escalating complexity and size of modern LLMs, optimizing resource uti
 - **Baseline Self-Attention** (GPT-2)   
 - **Scaled Dot-Product Attention**
 - **Grouped Query Attention**
-- **Multi-Head Flexible Attention**
 - **Linear Attention**
 - **Sliding Window Attention**
 - **Locality-Sensitive Hashing (LSH) Attention**
